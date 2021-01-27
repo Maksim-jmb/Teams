@@ -1,0 +1,16 @@
+{
+  "globalHotkeys":[
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5"
+  ],
+  "globalShiftkeys":[
+    "Shift+F1",
+    "Shift+F2",
+    "Shift+F3",
+    "Shift+F4",
+    "Shift+F5"
+  ]
+}

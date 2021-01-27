@@ -1,0 +1,145 @@
+        {
+            "type":"panel",
+            "jsonTemplate": "cb.button",
+            "name":"rr.smallpanel",
+            "visibility":"visible",
+            "horizontalAlignment": "stretch",
+            "verticalAlignment": "stretch",
+            "acceptsKeyboardFocus": false,
+            "acceptsMouseFocus": false,
+            "inputHooks": {
+                "hook2":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "deviceType": "mouse",
+                        "minValue": 0,
+                        "maxValue": 0
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "modifiers":"shift"
+                },
+                "hook3":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "deviceType": "mouse",
+                        "minValue": 0,
+                        "maxValue": 0
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "modifiers":"ctrl"
+                },
+                "hook4":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "deviceType": "mouse",
+                        "minValue": 0,
+                        "maxValue": 0
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "modifiers":"alt"
+                },
+                "hook5":{
+                    "control":{
+                        "controlName": "Mouse4",
+                        "deviceType": "mouse",
+                        "minValue": 0,
+                        "maxValue": 0
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "acceptsKeyboardFocus": false,
+                    "acceptsMouseFocus": false,
+                    "modifiers":"shift"
+                },
+                "hook6":{
+                    "control":{
+                        "controlName": "Mouse4",
+                        "deviceType": "mouse",
+                        "minValue": 0,
+                        "maxValue": 0
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "acceptsKeyboardFocus": false,
+                    "acceptsMouseFocus": false,
+                    "modifiers":"ctrl"
+                },
+                "hook7":{
+                    "control":{
+                        "controlName": "Mouse4",
+                        "deviceType": "mouse",
+                        "minValue": 0,
+                        "maxValue": 0
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "acceptsKeyboardFocus": false,
+                    "acceptsMouseFocus": false,
+                    "modifiers":"alt"
+                },
+                "hook8":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "deviceType": "mouse",
+                        "minValue": 0,
+                        "maxValue": 0
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "modifiers":"shift+ctrl"
+                },
+                "hook9":{
+                    "control":{
+                        "controlName": "Mouse4",
+                        "deviceType": "mouse",
+                        "minValue": 0,
+                        "maxValue": 0
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "acceptsKeyboardFocus": false,
+                    "acceptsMouseFocus": false,
+                    "modifiers":"shift+ctrl"
+                },
+                "hook10":{
+                    "control":{
+                        "controlName": "Num *",
+                        "deviceType": "keyboard",
+                        "minValue": 0,
+                        "maxValue": 0
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    }
+                }
+            }
+        },

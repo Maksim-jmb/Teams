@@ -1,0 +1,50 @@
+{
+    "$schema": "http://www.lavishsoft.com/schema/lgui2Package.json",
+    
+    "templates": {
+        "mm.source": {
+            "type": "videofeedsource",
+            "x":2341,
+            "y":216,
+            "width": 220,
+            "height": 220,
+            "acceptsKeyboardFocus":false,
+            "acceptsMouseFocus":false
+        },
+        "mm.viewer":{
+            "type":"videofeed",
+            "width":220,
+            "height":218,
+            "acceptsKeyboardFocus":false,
+            "acceptsMouseFocus":false
+        }
+    },
+    "elements": [
+        {
+            "type": "window",
+            "name": "mm.window",
+            "visibility": "visible",
+            "widthResizable":false,
+            "heightResizable":false,
+            "x":-1,
+            "y":-4,
+            "borderThickness":0,
+            "backgroundBrush": {
+                "color":"#00000000"
+            },
+            "acceptsKeyboardFocus":false,
+            "acceptsMouseFocus":false,
+            "content": {
+                "type":"stackpanel",
+                "name":"mm.viewerpanel",
+                "x":2340,
+                "width":220,
+                "height":220,
+                "orientation":"vertical",
+                "acceptsKeyboardFocus":false,
+                "acceptsMouseFocus":false
+            }                       
+        }
+    ]
+}
+    
