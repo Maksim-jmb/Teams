@@ -503,7 +503,7 @@ objectdef bwlCustomWindowLayout
 
     method ApplyWindowLayout(bool setOtherSlots=TRUE)
     {
-         variable jsonvalueref Slots="JMB.Slots"
+        variable jsonvalueref Slots="JMB.Slots"
 
         variable uint numSmallRegions=${ULSfix2}
         variable bool SwapOnActivate=TRUE
