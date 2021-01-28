@@ -1,7 +1,7 @@
 # Teams
 updated to work on Dev 1.03 build 6778
 
-changed some references to get it to work on Dev 1.03 - might work on 1.02, haven't tested it tho
+changed some references from agent2 to get it to work on Dev 1.03 - might work on 1.02, haven't tested it tho
 
 waiting to see what teams api will do - did mess around and put in teams with slots,layout,relaygroup changes     
 * using team1,2 -rest just examples i'll put up a vid to show it    
