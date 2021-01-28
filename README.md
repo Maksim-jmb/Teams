@@ -18,5 +18,6 @@ cleaned up how vfx layouts start up - previous agents skipped hiding/destroying 
 started to see if I could do anything with Flipper Agent - but with modifiers/mouse - its easy to heal any char now without swapping out of RR    
 so i'm only utilizing half of the flipper code atm for a quick switch to heals, shift global hotkey is also for quick switch to heal/layout swap
 
-still messing with obs settings - little blurry yet, in the consoles-I was showing relaygroups switch with team selection
+still messing with obs settings - little blurry yet - if anyone has any clear settings for 2 monitor wide recording down to typical aspect ratio let me know     
+in the consoles-I was showing relaygroups switch with team selection     
 https://youtu.be/dOl1vqRCN-4
