@@ -25,5 +25,5 @@ so i'm only utilizing half of the flipper code atm for a quick switch to heals, 
 progression from agent2/5man more details/explanations how i play and use this agent start in agent2
 
 still messing with obs settings - little blurry yet - if anyone has any clear settings for 2 monitor wide recording down to typical aspect ratio let me know     
-in the consoles-I was showing relaygroups switch with team selection, first team has a monk tank, 2nd warrior tank  
+in the consoles-I was showing relaygroups switch with team selection, 1st team monk tank, 2nd team warrior tank  
 https://youtu.be/dOl1vqRCN-4
