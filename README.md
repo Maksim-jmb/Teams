@@ -3,7 +3,7 @@ updated to work on Dev 1.03 build 6778
 
 changed some references from agent2/5man to get it to work on Dev 1.03 - might work on 1.02, haven't tested it tho
 
-waiting to see what teams api will do - only thing i see atm is id,display_name,virtual files - tried to add a team name to no avail....    
+waiting to see what teams api will do - only thing i see atm with .AddTeam[json] is id,display_name,virtual files - tried to add a team name to no avail....    
 can't find much on schema, only see a reference in the agent schema to teams...so not sure how it works yet     
 
 did mess around and put in teams with slots,layout,relaygroup changes     
