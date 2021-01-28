@@ -11,9 +11,11 @@ did mess around and put in teams with slots,layout,relaygroup changes
     
 revamped RR to work with mouse/modifiers in combination with addon clique....have to set each clique to global for it to work   
 * couple small changes in RR made this agent much more reliable - have a hard time breaking it now     
-* running thru full dungeons without getting the "Error #132" from spamming RR too fast or switching layouts to and fro quickly
-* caveat if you end up using this with clique - start out RR with Mouse1/modifier for a few presses
-* starting out RR with Mouse2/modifier sometimes throws the window layout willy-nilly...work in progress
+* running thru full dungeons without getting the WoW "Error #132" from spamming RR too fast or switching layouts to and fro quickly    
+* discord chat lately mentions switching to dx12 to avoid the error....i use dx11 and it works pretty well now
+* caveat if you end up using this with clique - start out RR with Mouse1/modifier for a few presses     
+* starting out RR with Mouse2/modifier sometimes throws the window layout willy-nilly...work in progress     
+example: main dps rotation i use shift+mouse1 so i usually start out with mouse1....mouse2/mod i have setup to heal specific chars     
      
 most functions are the same as agent2, agent 5man - buttons/mouse to change layouts,RR    
 cleaned up how vfx layouts start up - previous agents skipped hiding/destroying videofeeds     
