@@ -18,7 +18,9 @@ revamped RR to work with mouse/modifiers in combination with addon clique....hav
 most functions are the same as agent2, agent 5man - buttons/mouse to change layouts,RR    
 cleaned up how vfx layouts start up - previous agents skipped hiding/destroying videofeeds     
 started to see if I could do anything with Flipper Agent - but with modifiers/mouse - its easy to heal any char now without swapping out of RR    
-so i'm only utilizing half of the flipper code atm for a quick switch to heals, shift global hotkey is also for quick switch to heal/layout swap
+so i'm only utilizing half of the flipper code atm for a quick switch to heals, shift global hotkey is also for quick switch to heal/layout swap    
+
+progression from Agent2/5man more details/explanations how i play and use this agent start in Agent2
 
 still messing with obs settings - little blurry yet - if anyone has any clear settings for 2 monitor wide recording down to typical aspect ratio let me know     
 in the consoles-I was showing relaygroups switch with team selection     
