@@ -14,4 +14,4 @@ most functions are the same as agent2, agent 5man - buttons/mouse to change layo
 cleaned up how vfx layouts start up - previous agents skipped hiding/destroying videofeeds
 
 still messing with obs settings - little blurry yet, in the consoles-I was showing relaygroups switch with team selection
-https://www.youtube.com/watch?v=dOl1vqRCN-4
+https://youtu.be/dOl1vqRCN-4
