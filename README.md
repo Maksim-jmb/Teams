@@ -11,7 +11,7 @@ did mess around and put in teams with slots,layout,relaygroup changes
     
 revamped RR to work with mouse/modifiers in combination with addon clique....have to set each clique to global for it to work   
 * couple small changes in RR made this agent much more reliable - have a hard time breaking it now     
-* running thru full dungeons now without getting the "Error #132" from spamming RR to fast or switching layouts quick
+* running thru full dungeons without getting the "Error #132" from spamming RR too fast or switching layouts quick
      
 most functions are the same as agent2, agent 5man - buttons/mouse to change layouts,RR    
 cleaned up how vfx layouts start up - previous agents skipped hiding/destroying videofeeds     
