@@ -28,3 +28,6 @@ progression from agent2/5man more details/explanations how i play and use this a
 still messing with obs settings - little blurry yet - if anyone has any clear settings for 2 monitor wide recording down to typical aspect ratio let me know     
 in the consoles-I was showing relaygroups switch with team selection, 1st team monk tank, 2nd team warrior tank  
 https://youtu.be/dOl1vqRCN-4
+
+little higher quality vid - prob best i'm going to get without changing monitors and games to lower res just for a video...not by much, but clearer then the first
+https://youtu.be/pcDT4U06MCE
