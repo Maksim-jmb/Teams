@@ -1,7 +1,7 @@
 # Teams
 updated to work on Dev 1.03 build 6778
 
-changed some references from agent2 to get it to work on Dev 1.03 - might work on 1.02, haven't tested it tho
+changed some references from agent2/5man to get it to work on Dev 1.03 - might work on 1.02, haven't tested it tho
 
 waiting to see what teams api will do - did mess around and put in teams with slots,layout,relaygroup changes     
 * using team1,2 -rest just examples i'll put up a vid to show it    
@@ -11,7 +11,9 @@ revamped RR to work with mouse/modifiers in combination with addon clique....hav
 * running thru full dungeons now without getting the "Error #132" from spamming RR to fast or switching layouts quick
      
 most functions are the same as agent2, agent 5man - buttons/mouse to change layouts,RR    
-cleaned up how vfx layouts start up - previous agents skipped hiding/destroying videofeeds
+cleaned up how vfx layouts start up - previous agents skipped hiding/destroying videofeeds     
+started to see if I could do anything with Flipper Agent - but with modifiers/mouse - its easy to heal any char now without swapping out of RR    
+so i'm only utilizing half of the flipper code atm for a quick switch to heals, shift global hotkey is also for quick switch to heal/layout swap
 
 still messing with obs settings - little blurry yet, in the consoles-I was showing relaygroups switch with team selection
 https://youtu.be/dOl1vqRCN-4
