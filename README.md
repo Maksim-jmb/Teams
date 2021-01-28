@@ -9,7 +9,8 @@ can't find much on schema, only see a reference in the agent schema to teams...s
 did mess around and put in teams with slots,layout,relaygroup changes     
 * using team1,2 -rest just examples i'll put up a vid to show it    
     
-revamped RR to work with mouse/modifiers in combination with addon clique....have to set each clique spell to global for it to work without clicking on a frame  
+revamped RR to work with mouse/modifiers in combination with addon clique....     
+set each clique spell to global for it to work without clicking on a frame  
 * couple small changes in RR made this agent much more reliable - have a hard time breaking it now     
 * running thru full dungeons without getting the WoW "Error #132" from spamming RR too fast or switching layouts to and fro quickly    
 * discord chat lately mentions switching to dx12 to avoid the error....i use dx11 and it works pretty well now
