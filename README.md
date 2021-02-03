@@ -20,8 +20,7 @@ example: main dps rotation i use shift+mouse1 so i usually start out with mouse1
      
 most functions are the same as agent2, agent 5man - buttons/mouse to change layouts,RR    
 cleaned up how vfx layouts start up - previous agents skipped hiding/destroying videofeeds     
-started to see if I could do anything with Flipper Agent - but with modifiers/mouse - its easy to heal any char now without swapping out of RR    
-so i'm only utilizing half of the flipper code atm for a quick switch to heals, shift global hotkey is also for quick switch to heal/layout swap    
+testing new relay targting rotation in BRRSession focusing healer every other swap instead of once per rotation when healing tank or healer  
 
 progression from agent2/5man more details/explanations how i play and use this agent start in agent2
 
