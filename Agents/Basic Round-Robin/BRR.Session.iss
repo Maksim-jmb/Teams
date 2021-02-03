@@ -11,6 +11,7 @@ objectdef brrSession
     {
         LGUI2:LoadPackageFile[xBRR.Session.lgui2Package.json]
         This.Settings:EnableHotkeys
+        focusclick eat
     }
 
     method Shutdown()
