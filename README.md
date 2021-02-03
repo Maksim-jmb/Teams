@@ -25,7 +25,11 @@ cleaned up how vfx layouts start up - previous agents skipped hiding/destroying 
 progression from agent2/5man more details/explanations how i play and use this agent start in agent2
 
 gui/startup video https://youtu.be/pcDT4U06MCE    
-short gameplay video for driver/main focusing agent https://youtu.be/EUK8_EBAwOE
+short gameplay video for driver/main focusing agent https://youtu.be/EUK8_EBAwOE     
+selective healing in RR - better example then above https://youtu.be/7XA8OvVRe1g
+* notes - have to mindful of your postion with main, if using just mouse+mod for RR you can select a char in the middle of the screen
+* targeted the warlock in the beginning of the last video until the main was moved     
+* their are ways around that with cvar/macros just don't have them on atm - here are 2 that are handy /console ActionCam & /console deselectOnClick
 
 current update:
 * included FTL agent
