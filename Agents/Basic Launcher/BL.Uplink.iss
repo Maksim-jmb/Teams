@@ -29,6 +29,7 @@ objectdef blUplink
         Settings:Store
         This:RefreshGames
         This:RefreshSettings
+        This:InstallTeam
 
         LGUI2:LoadPackageFile[xBL.Uplink.lgui2package.json]
     }
@@ -37,6 +38,36 @@ objectdef blUplink
     {
         LGUI2:UnloadPackageFile[xBL.Uplink.lgui2package.json]
     }
+
+    ; method InstallTeam(uint Slot, string newTeam)
+    ; {
+    ;     variable jsonvalue jo
+    ;     jo:SetValue["$$>
+    ;     {
+    ;         "Team1":[
+    ;             {
+    ;                 "id":${Slot},
+    ;                 "display_name":"What",
+    ;                 "virtualFiles":[
+    ;                     {
+    ;                         "pattern":"*/Config.WTF",
+    ;                         "replacement":"{1}/${newTeam~}/Config.Generic.JMB${Slot}.WTF"
+    ;                     },
+    ;                     {
+    ;                         "pattern":"Software/Blizzard Entertainment/World of Warcraft/Client/\*",
+    ;                         "replacement":"Software/Blizzard Entertainment/World of Warcraft/${newTeam~}/Client-JMB${Slot}/{1}"
+    ;                     }
+    ;                 ]
+    ;             }
+    ;         ]
+    ;     }
+    ;     <$$"]
+    ;     JMB.Team:Add["${jo.AsJSON~}"]
+    ;     JMB.Team:Set["${jo.AsJSON~}"]
+    ;     JMB.Team:SetValue["${jo.AsJSON~}"]
+    ;     JMB:AddTeam["${jo.AsJSON~}"]
+    ; }
+
 
     method InstallCharacter(uint Slot, string newTeam)
     {
@@ -162,26 +193,26 @@ objectdef blUplink
 
     method Launch()
     {
-        if (${ULSfix2}<=6) && ${setlayout}!=${vfx3} && ${setlayout}!=${vfx4} && ${setlayout}!=${vfx5}
+        if (${lsFix}<=7) && ${setlayout}!=${vfx3} && ${setlayout}!=${vfx4} && ${setlayout}!=${vfx5}
         {
             BLUplink:LaunchWowClient
             TimedCommand 60 BLUplink:JoinRelayGroups
             TimedCommand 90 BWLUplink:ApplyWindowLayout
         }
-        if (${ULSfix2}<=6) && (${setlayout}==${vfx3} || ${setlayout}==${vfx4} || ${setlayout}==${vfx5})
+        if (${lsFix}<=7) && (${setlayout}==${vfx3} || ${setlayout}==${vfx4} || ${setlayout}==${vfx5})
         {
             BLUplink:LaunchWowClient
             BLUplink:LaunchdxNothing
             TimedCommand 60 BLUplink:JoinRelayGroups
             TimedCommand 90 BLUplink:ApplyWindowLayout
         }
-        if (${ULSfix2}>=7) && ${setlayout}!=${vfx3} && ${setlayout}!=${vfx4} && ${setlayout}!=${vfx5}
+        if (${lsFix}>=8) && ${setlayout}!=${vfx3} && ${setlayout}!=${vfx4} && ${setlayout}!=${vfx5}
         {   
             BLUplink:LaunchWowClient
             TimedCommand 100 BLUplink:JoinRelayGroups
             TimedCommand 120 BWLUplink:ApplyWindowLayout
         }
-        if (${ULSfix2}>=7) && (${setlayout}==${vfx3} || ${setlayout}==${vfx4} || ${setlayout}==${vfx5})
+        if (${lsFix}>=8) && (${setlayout}==${vfx3} || ${setlayout}==${vfx4} || ${setlayout}==${vfx5})
         {
             BLUplink:LaunchWowClient
             BLUplink:LaunchdxNothing

@@ -5,7 +5,11 @@ objectdef rgSession
     variable blSettings Settings
 
     method Initialize()
-    {    
+    {  
+    }
+
+    method Shutdown()
+    {
     }
 }
 
@@ -69,6 +73,7 @@ objectdef rgTeam2
     {
         uplink relaygroup -join party
         uplink relaygroup -join heal
+        uplink relaygroup -join melee
         uplink relaygroup -join ranged
         uplink relaygroup -join monk
     }
@@ -90,7 +95,7 @@ objectdef rgTeam2
     {
         uplink relaygroup -join party
         uplink relaygroup -join dps
-        uplink relaygroup -join melee
+        uplink relaygroup -join ranged
         uplink relaygroup -join warlock
     }
 }

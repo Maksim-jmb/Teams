@@ -20,8 +20,9 @@ objectdef cbSession
 
     method WindowSwap(uint slot)
     {
-        ; if ${JMB.Slot}==${slot}
-        ;     return
+        if ${Session.Equal["jmb${slot}"]}
+            return
+        ; FlushQueued
         uplink focus jmb${slot}
     }
 

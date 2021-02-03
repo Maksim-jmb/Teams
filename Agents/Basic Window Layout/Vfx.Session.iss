@@ -1,4 +1,3 @@
-#include "Agents\\Basic Launcher\\BL.Common.iss"
 #include "BWL.Common.iss"
 
 objectdef vfxsession
@@ -57,16 +56,22 @@ objectdef vfxsession
 
     method VfxButton()
     {
-        relay party BRRSession:Disable
-        relay party BWLSession:UpdateCurrentLayout[${UseLayout}]
-        relay party BWLSession:ApplyWindowLayout
-        ; Event[On Activate]:Execute
+        if ${JMB.Slot}==${FtlSlot}
+        {
+            return
+        }
+        else
+        {
+            relay ${Session} BWLSession:UpdateCurrentLayout[${UseLayout}]
+            relay ${Session} BRRSession:Disable
+            relay jmb1 BWLSession:ApplyWindowLayout
+        }
     }
 
     method VfxButton2()
     {
-        relay party BWLSession:UpdateCurrentLayout[${UseLayout}]
-        relay party BWLSession:ApplyWindowLayout 
+        relay ${Session} BWLSession:UpdateCurrentLayout[${UseLayout}]
+        relay ${Session} BWLSession:ApplyWindowLayout 
     }
 
     method Focus(uint Slot)

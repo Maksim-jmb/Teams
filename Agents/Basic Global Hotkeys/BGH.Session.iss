@@ -95,14 +95,14 @@ objectdef bghSession
     method OnGlobalHotkey()
     {
         windowvisibility foreground
-        FlushQueued
+        ; FlushQueued
         Event[OnHotkeyFocused]:Execute
     }
 
     method OnGlobalShiftkey()
     {
         windowvisibility foreground
-        FlushQueued
+        ; FlushQueued
         relay party VfxSession:VfxButton
         Event[OnShiftkeyFocused]:Execute
     }

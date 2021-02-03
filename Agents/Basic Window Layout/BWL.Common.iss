@@ -503,7 +503,7 @@ objectdef bwlCustomWindowLayout
 
     method ApplyWindowLayout(bool setOtherSlots=TRUE)
     {
-        variable jsonvalueref Slots="JMB.Slots"
+         variable jsonvalueref Slots="JMB.Slots"
 
         variable uint numSmallRegions=${ULSfix2}
         variable bool SwapOnActivate=TRUE
@@ -682,15 +682,15 @@ objectdef bwlVfx3WindowLayout
         
         if ${ULSfix3}<=3
             relay jmb${ULSfix2} "WindowCharacteristics -pos -viewable 2560,0 -size -viewable 640x1080 -frame none "
-            relay ~jmb${ULSfix2} "WindowCharacteristics -pos -viewable ${mainX},${mainY} -size -viewable ${mainWidth}x${mainHeight} -frame none "
+            relay ~@jmb${ULSfix2} "WindowCharacteristics -pos -viewable ${mainX},${mainY} -size -viewable ${mainWidth}x${mainHeight} -frame none "
             relay ~jmb${ULSfix2} "LGUI2.Element["vfx3.window"]:Destroy"
         if ${ULSfix3}>=4 && ${ULSfix3}<=6
             relay jmb${ULSfix2} "WindowCharacteristics -pos -viewable 2560,0 -size -viewable 1280x1080 -frame none "
-            relay ~jmb${ULSfix2} "WindowCharacteristics -pos -viewable ${mainX},${mainY} -size -viewable ${mainWidth}x${mainHeight} -frame none "
+            relay ~@jmb${ULSfix2} "WindowCharacteristics -pos -viewable ${mainX},${mainY} -size -viewable ${mainWidth}x${mainHeight} -frame none "
             relay ~jmb${ULSfix2} "LGUI2.Element["vfx3.window"]:Destroy"
         if ${ULSfix3}>=7
             relay jmb${ULSfix2} "WindowCharacteristics -pos -viewable 2560,0 -size -viewable 1920x1080 -frame none "
-            relay ~jmb${ULSfix2} "WindowCharacteristics -pos -viewable ${mainX},${mainY} -size -viewable ${mainWidth}x${mainHeight} -frame none "
+            relay ~@jmb${ULSfix2} "WindowCharacteristics -pos -viewable ${mainX},${mainY} -size -viewable ${mainWidth}x${mainHeight} -frame none "
             relay ~jmb${ULSfix2} "LGUI2.Element["vfx3.window"]:Destroy"
         BWLSession.Applied:Set[1]
     }

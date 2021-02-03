@@ -22,24 +22,7 @@ objectdef brrUplink
         LGUI2:UnloadPackageFile[xBRR.Uplink.lgui2Package.json]
     }
 
-    method Flip(uint fromSlot, uint toSlot)
-    {
-        RestoreSlot:Set[${fromSlot}]
-        focus "jmb${toSlot~}"
-        if ${SwitchAsHotkey}
-            relay "jmb${RestoreSlot}" "Event[OnHotkeyFocused]:Execute"
-    }
 
-    ; method Restore()
-    ; {
-    ;     if !${RestoreSlot}
-    ;         return
-
-    ;     focus "jmb${RestoreSlot}"
-    ;     if ${SwitchAsHotkey}
-    ;         relay "jmb${RestoreSlot}" "Event[OnHotkeyFocused]:Execute"
-    ;     RestoreSlot:Set[0]
-    ; }
 
     method SetIgnoreValue(string key, bool newValue)
     {

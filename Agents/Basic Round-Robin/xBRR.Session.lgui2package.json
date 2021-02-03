@@ -44,9 +44,10 @@
                         "maxValue": 1
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false,
@@ -61,9 +62,10 @@
                         "maxValue": 1
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindowHealing"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false,
@@ -78,9 +80,10 @@
                         "maxValue": 1
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false,
@@ -95,9 +98,10 @@
                         "maxValue": 1
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false,
@@ -113,9 +117,10 @@
                         "maxValue": 1
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false,
@@ -131,9 +136,10 @@
                         "maxValue": 1
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindowHealing"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false,
@@ -148,9 +154,10 @@
                         "maxValue": 1
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false,
@@ -165,9 +172,10 @@
                         "maxValue": 1
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false,
@@ -182,9 +190,10 @@
                         "maxValue": 1
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false,
@@ -200,9 +209,10 @@
                         "maxValue": 1
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false,
@@ -218,9 +228,10 @@
                         "maxValue": 1
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false
@@ -232,9 +243,10 @@
                         "deviceType": "keyboard"
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false,
@@ -249,29 +261,16 @@
                         "deviceType": "keyboard"
                     },
                     "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"NextWindow"
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false,
                     "modifiers":[
                         "shift"
                     ]
-                },
-                "flipper":{
-                    "control":{
-                        "controlName":"F",
-                        "controlType": "button",
-                        "deviceType": "keyboard"
-                    },
-                    "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"OnFlipperHook"
-                    },
-                    "keyboardFocus": false,
-                    "mouseFocus": false
                 }
             }
         },
@@ -534,20 +533,6 @@
                     "modifiers":[
                         "shift"
                     ]
-                },
-                "flipper":{
-                    "control":{
-                        "controlName":"F",
-                        "controlType": "button",
-                        "deviceType": "keyboard"
-                    },
-                    "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"OnFlipperHook"
-                    },
-                    "keyboardFocus": false,
-                    "mouseFocus": false
                 }
             }
         },
@@ -810,20 +795,6 @@
                     "modifiers":[
                         "shift"
                     ]
-                },
-                "flipper":{
-                    "control":{
-                        "controlName":"F",
-                        "controlType": "button",
-                        "deviceType": "keyboard"
-                    },
-                    "eventHandler":{
-                        "type":"method",
-                        "object":"BRRSession",
-                        "method":"OnFlipperHook"
-                    },
-                    "keyboardFocus": false,
-                    "mouseFocus": false
                 }
             }
         },

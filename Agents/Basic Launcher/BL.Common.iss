@@ -1,3 +1,5 @@
+
+
 objectdef blSettings
 {
    variable filepath GlobalFolder="${LavishScript.HomeDirectory}"
@@ -26,7 +28,7 @@ objectdef blSettings
         This:LoadSettings
     }
 
-     method Load()
+    method Load()
     {
         variable jsonvalue jo
         declare ULSfix uint global
@@ -296,7 +298,6 @@ objectdef blSettings
     {
         CurrentTeam:ApplyTeam
     }
-
 }
 
 objectdef blTeam1 

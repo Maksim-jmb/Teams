@@ -1,0 +1,87 @@
+{
+    "$schema": "http://www.lavishsoft.com/schema/lgui2Package.json",    
+    "templates": {
+    },
+    "elements":[
+        {
+            "type":"panel",
+            "visibility": "visible",
+            "name":"ftl.panel",
+            "horizontalAlignment":"stretch",
+            "verticalAlignment":"stretch",
+            "acceptsKeyboardFocus":false,
+            "acceptsMouseFocus":false,
+            "inputHooks": {
+                "hook1":{
+                    "control":{
+                        "controlName": "Num 0",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "relay all FTLSettings:FTLset[${JMB.MouseOverSlot}]"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
+                },
+                "hook2":{
+                    "control":{
+                        "controlName": "F7",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "relay ${Session} FTLSettings:FTLfocus[${JMB.MouseOverSlot}]"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
+                },
+                "hook3":{
+                    "control":{
+                        "controlName": "F8",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "relay ${Session} FTLSettings:FTLswaplayout[${JMB.MouseOverSlot}]"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
+                }
+            }
+        },
+        {
+            "type":"panel",
+            "name":"jmbpopup",
+            "visibility":"hidden",
+            "horizontalAlignment":"stretch",
+            "verticalAlignment":"stretch",
+            "keyboardFocus": false,
+            "mouseFocus": false,
+            "children":[
+                {
+                    "type":"textblock",
+                    "name":"jmbpopup.text",
+                    "horizontalAlignment":"center",
+                    "yFactor":0.1,
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "font":{
+                        "face":"Tahoma",
+                        "bold":true,
+                        "height":40
+                    }
+                }
+            ]
+        }
+    ]
+}

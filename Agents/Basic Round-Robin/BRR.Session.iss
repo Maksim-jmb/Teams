@@ -1,10 +1,11 @@
 #include "BRR.Common.iss"
 
+
 objectdef brrSession
 {
     variable taskmanager TaskManager=${LMAC.NewTaskManager["brrSession"]}
     variable brrSettings Settings
-    variable uint KeySlot=2
+    variable blSettings BlSettings
 
     method Initialize()
     {
@@ -36,23 +37,27 @@ objectdef brrSession
             ; FlushQueued
     }
 
-     method OnFlipperHook()
+    method NextWindowHealing()
     {
-        if ${Context.Args[position]}
-        {
-            if ${JMB.Slot}!=${KeySlot}
+        if ${Settings.CurrentProfile.Name.Equal["party"]}
+            switch ${mod}
             {
-                relay uplink "BRRUplink:Flip[${JMB.Slot},${KeySlot}]"
+                default
+                case 1
+                    uplink focus -first heal
+                    mod:Set[2]
+                    brrnum:Inc
+                    ; echo "case 1 ${mod} ${brrnum}"
+                    break
+                case 2
+                    uplink focus -next (jmb1,jmb3,jmb4,jmb5)%${brrnum}
+                    mod:Set[1]
+                    ; echo "case 2 ${mod} ${brrnum}"
+                    break
             }
-        }
-        ; else
-        ; {
-        ;     if ${JMB.Slot}==${KeySlot}
-        ;     {
-        ;         relay uplink "BRRUplink:Restore"
-        ;     }
-        ; }
-    }       
+            if ${brrnum}>=5
+                brrnum:Set[0]
+    }
 
     method OnControlHook(string controlName)
     {
@@ -115,6 +120,8 @@ objectdef brrSession
 }
 
 variable(global) brrSession BRRSession
+variable(globalkeep) uint brrnum=1
+variable(globalkeep) uint mod=1
 
 function main()
 {

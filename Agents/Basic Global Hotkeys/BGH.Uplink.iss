@@ -9,14 +9,14 @@ objectdef bghUplink
     {
         This:LoadSettings
 
-        LGUI2:LoadPackageFile[xBGH.Uplink.lgui2Package.json]
+        LGUI2:LoadPackageFile[xBGH.Uplink.lgui2package.json]
         LGUI2.Element[bgh.filename]:SetText["${GlobalFolder.Replace["/","\\"]~}\\Configuration\\Settings\\bgh.Settings.json"]
     }
     
     method Shutdown()
     {
         This:Disable
-        LGUI2:UnloadPackageFile[xBGH.Uplink.lgui2Package.json]
+        LGUI2:UnloadPackageFile[xBGH.Uplink.lgui2package.json]
     }
 
     method LoadSettings()
