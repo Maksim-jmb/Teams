@@ -20,7 +20,7 @@ example: main dps rotation i use shift+mouse1 so i usually start out with mouse1
      
 most functions are the same as agent2, agent 5man - buttons/mouse to change layouts,RR    
 cleaned up how vfx layouts start up - previous agents skipped hiding/destroying videofeeds     
-testing new relay targting rotation in BRRSession focusing healer every other swap instead of once per rotation when healing tank or healer  
+ 
 
 progression from agent2/5man more details/explanations how i play and use this agent start in agent2
 
@@ -29,4 +29,8 @@ in the consoles-I was showing relaygroups switch with team selection, 1st team m
 https://youtu.be/dOl1vqRCN-4
 
 little higher quality vid - prob best i'm going to get without changing monitors and games to lower res just for a video...not by much, but clearer then the first
-https://youtu.be/pcDT4U06MCE
+https://youtu.be/pcDT4U06MCE     
+
+current update:
+* included FTL agent
+* testing new relay targting rotation in BRRSession focusing healer every other swap instead of once per rotation when healing tank or healer 
