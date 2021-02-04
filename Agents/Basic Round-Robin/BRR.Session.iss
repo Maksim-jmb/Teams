@@ -38,26 +38,45 @@ objectdef brrSession
             ; FlushQueued
     }
 
+    ;method NextWindowHealing()
+    ;{
+    ;    if ${Settings.CurrentProfile.Name.Equal["party"]}
+    ;        switch ${mod}
+    ;        {
+    ;            default
+    ;            case 1
+    ;                uplink focus -first heal
+    ;                mod:Set[2]
+    ;                brrnum:Inc
+    ;                ; echo "case 1 ${mod} ${brrnum}"
+    ;                break
+    ;            case 2
+    ;                uplink focus -next (jmb1,jmb3,jmb4,jmb5)%${brrnum}
+    ;                mod:Set[1]
+    ;                ; echo "case 2 ${mod} ${brrnum}"
+    ;                break
+    ;        }
+    ;        if ${brrnum}>=5
+    ;            brrnum:Set[0]
+    ;}
+    
     method NextWindowHealing()
     {
         if ${Settings.CurrentProfile.Name.Equal["party"]}
-            switch ${mod}
-            {
-                default
-                case 1
-                    uplink focus -first heal
-                    mod:Set[2]
-                    brrnum:Inc
-                    ; echo "case 1 ${mod} ${brrnum}"
-                    break
-                case 2
-                    uplink focus -next (jmb1,jmb3,jmb4,jmb5)%${brrnum}
-                    mod:Set[1]
-                    ; echo "case 2 ${mod} ${brrnum}"
-                    break
-            }
-            if ${brrnum}>=5
-                brrnum:Set[0]
+            uplink focus -first heal
+            mod:Set[2]
+            brrnum:Inc
+            ; echo "case 1 ${mod} ${brrnum}"
+        if ${brrnum}>=5
+            brrnum:Set[1]
+        This:NextWindowHealing2
+    }
+
+    method NextWindowHealing2()
+    {
+        uplink focus -first (jmb1,jmb3,jmb4,jmb5)%${brrnum}
+        mod:Set[1]
+        ; echo "case 2 ${mod} ${brrnum}"
     }
 
     method OnControlHook(string controlName)
