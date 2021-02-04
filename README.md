@@ -30,7 +30,7 @@ selective healing in RR - better example then above https://youtu.be/7XA8OvVRe1g
 * notes - have to mindful of your postion with main, if using just mouse+mod for RR you can select a char in the middle of the screen
 * targeted the warlock in the beginning of the last video until the main was moved     
 * there are ways around that with cvar/macros just don't have them on atm - here are 2 that are handy /console ActionCam can move your character down from the center     
-* and toggling /console deselectOnClick can lock your target from clicking open area
+* and toggling /console deselectOnClick can lock your target from changing clicking in an open area
 
 current update:
 * included FTL agent
