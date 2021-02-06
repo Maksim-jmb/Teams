@@ -1,0 +1,881 @@
+{
+    "$schema": "http://www.lavishsoft.com/schema/lgui2Package.json",    
+    "templates": {
+        "party.allButtons":{
+            "type":"panel",
+            "name":"basicRoundRobin.allButtons",
+            "visibility":"visible",
+            "width":4480,
+            "verticalAlignment":"stretch",
+            "children":[
+                {
+                    "type":"panel",
+                    "xFactor":0.4,
+                    "yFactor":0.10,
+                    "padding":20,
+                    "borderThickness":3,
+                    "borderBrush":{
+                        "color":"#FF009600"
+                    },
+                    "backgroundBrush":{
+                        "color":"#C4FFFFFF"
+                    },
+                    "children":[
+                        {
+                            "type":"textblock",
+                            "text":"Party",
+                            "color":"#FF009600",
+                            "font":{
+                                "bold":true,
+                                "face":"Tahoma",
+                                "heightFactor":3
+                            }
+                        }
+                    ]
+                }
+            ],
+            "acceptsKeyboardFocus":false,
+            "acceptsMouseFocus":false,
+            "inputHooks": {
+                "hook1":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift"
+                    ]
+                },
+                "hook2":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSettings:NextWindowHealing"
+                        ]
+                    },
+                    "modifiers":[
+                        "ctrl"
+                    ]
+                },
+                "hook3":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSettings:NextWindow"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "alt"
+                    ]
+                },
+                "hook4":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift",
+                        "ctrl"
+                    ]
+                },
+                "hook5":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "alt",
+                        "ctrl"
+                    ]
+                },
+                "hook6":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSettings:NextWindowHealing"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift"
+                    ]
+                },
+                "hook7":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "ctrl"
+                    ]
+                },
+                "hook8":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "alt"
+                    ]
+                },
+                "hook9":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift",
+                        "ctrl"
+                    ]
+                },
+                "hook10":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "alt",
+                        "ctrl"
+                    ]
+                },
+                "hook11":{
+                    "control":{
+                        "controlName": "Num *",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
+                },
+                "dps":{
+                    "control":{
+                        "controlName":"4",
+                        "controlType": "button",
+                        "deviceType": "keyboard"
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift"
+                    ]
+                },
+                "aoe":{
+                    "control":{
+                        "controlName":"5",
+                        "controlType": "button",
+                        "deviceType": "keyboard"
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSession:NextWindow"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift"
+                    ]
+                },
+                "hookk":{
+                    "control":{
+                        "controlName": "K",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSettings:NextWindowHealing"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
+                }
+            }
+        },
+        "melee.allButtons":{
+            "type":"panel",
+            "name":"basicRoundRobin.allButtons",
+            "visibility":"visible",
+            "horizontalAlignment":"stretch",
+            "verticalAlignment":"stretch",
+            "children":[
+                {
+                    "type":"panel",
+                    "xFactor":0.75,
+                    "yFactor":0.10,
+                    "padding":20,
+                    "borderThickness":3,
+                    "borderBrush":{
+                        "color":"#FF964B25"
+                    },
+                    "backgroundBrush":{
+                        "color":"#C4FFFFFF"
+                    },
+                    "children":[
+                        {
+                            "type":"textblock",
+                            "text":"Melee",
+                            "color":"#FF964B25",
+                            "font":{
+                                "bold":true,
+                                "face":"Tahoma",
+                                "heightFactor":3
+                            }
+                        }
+                    ]
+                }
+
+                
+            ],
+            "acceptsKeyboardFocus":false,
+            "acceptsMouseFocus":false,
+            "inputHooks": {
+                "hook1":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift"
+                    ]
+                },
+                "hook2":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "ctrl"
+                    ]
+                },
+                "hook3":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "alt"
+                    ]
+                },
+                "hook4":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift",
+                        "ctrl"
+                    ]
+                },
+                "hook5":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "alt",
+                        "ctrl"
+                    ]
+                },
+                "hook6":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift"
+                    ]
+                },
+                "hook7":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "ctrl"
+                    ]
+                },
+                "hook8":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "alt"
+                    ]
+                },
+                "hook9":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift",
+                        "ctrl"
+                    ]
+                },
+                "hook10":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "alt",
+                        "ctrl"
+                    ]
+                },
+                "hook11":{
+                    "control":{
+                        "controlName": "Num *",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
+                },
+                "dps":{
+                    "control":{
+                        "controlName":"4",
+                        "controlType": "button",
+                        "deviceType": "keyboard"
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift"
+                    ]
+                },
+                "aoe":{
+                    "control":{
+                        "controlName":"5",
+                        "controlType": "button",
+                        "deviceType": "keyboard"
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift"
+                    ]
+                }
+            }
+        },
+        "ranged.allButtons":{
+            "type":"panel",
+            "name":"basicRoundRobin.allButtons",
+            "visibility":"visible",
+            "horizontalAlignment":"stretch",
+            "verticalAlignment":"stretch",
+            "children":[
+                {
+                    "type":"panel",
+                    "xFactor":0.75,
+                    "yFactor":0.10,
+                    "padding":20,
+                    "borderThickness":3,
+                    "borderBrush":{
+                        "color":"#FF963296"
+                    },
+                    "backgroundBrush":{
+                        "color":"#C4FFFFFF"
+                    },
+                    "children":[
+                        {
+                            "type":"textblock",
+                            "text":"Ranged",
+                            "color":"#FF963296",
+                            "font":{
+                                "bold":true,
+                                "face":"Tahoma",
+                                "heightFactor":3
+                            }
+                        }
+                    ]
+                }
+
+                
+            ],
+            "acceptsKeyboardFocus":false,
+            "acceptsMouseFocus":false,
+            "inputHooks": {
+                "hook1":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift"
+                    ]
+                },
+                "hook2":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "ctrl"
+                    ]
+                },
+                "hook3":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "alt"
+                    ]
+                },
+                "hook4":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift",
+                        "ctrl"
+                    ]
+                },
+                "hook5":{
+                    "control":{
+                        "controlName": "Mouse1",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "alt",
+                        "ctrl"
+                    ]
+                },
+                "hook6":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift"
+                    ]
+                },
+                "hook7":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "ctrl"
+                    ]
+                },
+                "hook8":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "alt"
+                    ]
+                },
+                "hook9":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift",
+                        "ctrl"
+                    ]
+                },
+                "hook10":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "alt",
+                        "ctrl"
+                    ]
+                },
+                "hook11":{
+                    "control":{
+                        "controlName": "Num *",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
+                },
+                "dps":{
+                    "control":{
+                        "controlName":"4",
+                        "controlType": "button",
+                        "deviceType": "keyboard"
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift"
+                    ]
+                },
+                "aoe":{
+                    "control":{
+                        "controlName":"5",
+                        "controlType": "button",
+                        "deviceType": "keyboard"
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "modifiers":[
+                        "shift"
+                    ]
+                }
+            }
+        },
+        "mouse2.allButtons":{
+            "type":"panel",
+            "name":"basicRoundRobin.allButtons",
+            "visibility":"visible",
+            "horizontalAlignment":"stretch",
+            "verticalAlignment":"stretch",
+            "children":[
+                {
+                    "type":"panel",
+                    "xFactor":0.75,
+                    "yFactor":0.10,
+                    "padding":20,
+                    "borderThickness":3,
+                    "borderBrush":{
+                        "color":"#FF000096"
+                    },
+                    "backgroundBrush":{
+                        "color":"#C4FFFFFF"
+                    },
+                    "children":[
+                        {
+                            "type":"textblock",
+                            "text":"Mouse2",
+                            "color":"#FF000096",
+                            "horizontalAlignment": "center",
+                            "font":{
+                                "bold":true,
+                                "face":"Tahoma",
+                                "heightFactor":3
+                            }
+                        }
+                    ]
+                }
+            ],
+            "acceptsKeyboardFocus":false,
+            "acceptsMouseFocus":false,
+            "inputHooks": {
+                "hook5":{
+                    "control":{
+                        "controlName": "Mouse2",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
+                }
+            }
+        }
+    },
+    "elements": [
+        {
+            "type":"panel",
+            "visibility":"hidden",
+            "name":"basicRoundRobin.events"
+        },
+        {
+            "type": "window",
+            "name": "brr.window",
+            "title": "Basic Round-Robin",
+            "visibility":"hidden"            
+        }
+    ]
+}
