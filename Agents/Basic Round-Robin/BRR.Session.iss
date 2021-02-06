@@ -26,21 +26,12 @@ objectdef brrSession
     {
         if ${Settings.CurrentProfile.Name.Equal["melee"]} 
             uplink focus -next melee
-            ; FlushQueued
         if ${Settings.CurrentProfile.Name.Equal["party"]}
-            variable int Count
-            for (Count:Set[0] ; ${Count}<=1 ; Count:Inc)
-            {
-                uplink focus -next party
-                ; FlushQueued
-            }
-            ; focusclick eat
+            uplink focus -next party
         if ${Settings.CurrentProfile.Name.Equal["ranged"]}
             uplink focus -next ranged
-            ; FlushQueued
         if ${Settings.CurrentProfile.Name.Equal["mouse2"]}
             uplink focus -next party
-            ; FlushQueued
     }
 
     method OnControlHook(string controlName)
