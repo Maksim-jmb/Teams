@@ -36,3 +36,4 @@ current update:
 * included FTL agent
 * updated BRR to the best solution i have so far for swapping to heal every other
 * good info today i learned from Lax - not always the code - some ingame settings help out using mouse buttons for RR
+* might be able to clear up that mouse right click issue from above now with mouselook
