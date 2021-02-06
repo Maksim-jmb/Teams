@@ -11,7 +11,7 @@ objectdef brrSession
     {
         LGUI2:LoadPackageFile[xBRR.Session.lgui2Package.json]
         This.Settings:EnableHotkeys
-        focusclick eat
+        ; focusclick eat
     }
 
     method Shutdown()
@@ -28,55 +28,19 @@ objectdef brrSession
             uplink focus -next melee
             ; FlushQueued
         if ${Settings.CurrentProfile.Name.Equal["party"]}
-            uplink focus -next party
-            ; FlushQueued
+            variable int Count
+            for (Count:Set[0] ; ${Count}<=1 ; Count:Inc)
+            {
+                uplink focus -next party
+                ; FlushQueued
+            }
+            ; focusclick eat
         if ${Settings.CurrentProfile.Name.Equal["ranged"]}
             uplink focus -next ranged
             ; FlushQueued
         if ${Settings.CurrentProfile.Name.Equal["mouse2"]}
             uplink focus -next party
             ; FlushQueued
-    }
-
-    ;method NextWindowHealing()
-    ;{
-    ;    if ${Settings.CurrentProfile.Name.Equal["party"]}
-    ;        switch ${mod}
-    ;        {
-    ;            default
-    ;            case 1
-    ;                uplink focus -first heal
-    ;                mod:Set[2]
-    ;                brrnum:Inc
-    ;                ; echo "case 1 ${mod} ${brrnum}"
-    ;                break
-    ;            case 2
-    ;                uplink focus -next (jmb1,jmb3,jmb4,jmb5)%${brrnum}
-    ;                mod:Set[1]
-    ;                ; echo "case 2 ${mod} ${brrnum}"
-    ;                break
-    ;        }
-    ;        if ${brrnum}>=5
-    ;            brrnum:Set[0]
-    ;}
-    
-    method NextWindowHealing()
-    {
-        if ${Settings.CurrentProfile.Name.Equal["party"]}
-            uplink focus -first heal
-            mod:Set[2]
-            brrnum:Inc
-            ; echo "case 1 ${mod} ${brrnum}"
-        if ${brrnum}>=5
-            brrnum:Set[1]
-        This:NextWindowHealing2
-    }
-
-    method NextWindowHealing2()
-    {
-        uplink focus -first (jmb1,jmb3,jmb4,jmb5)%${brrnum}
-        mod:Set[1]
-        ; echo "case 2 ${mod} ${brrnum}"
     }
 
     method OnControlHook(string controlName)
@@ -140,8 +104,7 @@ objectdef brrSession
 }
 
 variable(global) brrSession BRRSession
-variable(globalkeep) uint brrnum=1
-variable(globalkeep) uint mod=1
+
 
 function main()
 {

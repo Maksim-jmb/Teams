@@ -231,6 +231,43 @@ objectdef brrSettings
         LGUI2.Element[basicRoundRobin.events]:FireEventHandler[onCurrentProfileChanged]
     }
 
+    method NextWindowHealing(int Count=0)
+    {
+        while ${mod}==1
+        {
+            NextWindowHealing1
+            return
+        }
+        while ${mod}==2
+        {
+            NextWindowHealing2
+            return
+        }
+    }
+
     variable collection:brrProfile Profiles
     variable weakref CurrentProfile
+}
+
+variable(global) brrSettings BRRSettings
+variable(globalkeep) uint brrnum=1
+variable(globalkeep) uint mod=1
+
+atom NextWindowHealing1(int Count=1)
+{
+    uplink focus jmb2
+    mod:Set[2]
+    return
+}
+
+atom NextWindowHealing2()
+{
+    uplink focus jmb${brrnum}
+    mod:Set[1]
+    if ${brrnum}>=5
+    {
+        brrnum:Set[0]
+    }
+    brrnum:Inc
+    return
 }

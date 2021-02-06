@@ -5,12 +5,12 @@
             "type":"panel",
             "name":"basicRoundRobin.allButtons",
             "visibility":"visible",
-            "horizontalAlignment":"stretch",
+            "width":4480,
             "verticalAlignment":"stretch",
             "children":[
                 {
                     "type":"panel",
-                    "xFactor":0.75,
+                    "xFactor":0.4,
                     "yFactor":0.10,
                     "padding":20,
                     "borderThickness":3,
@@ -64,11 +64,9 @@
                     "eventHandler":{
                         "type":"code",
                         "code":[
-                            "BRRSession:NextWindowHealing"
+                            "BRRSettings:NextWindowHealing"
                         ]
                     },
-                    "keyboardFocus": false,
-                    "mouseFocus": false,
                     "modifiers":[
                         "ctrl"
                     ]
@@ -82,7 +80,7 @@
                     "eventHandler":{
                         "type":"code",
                         "code":[
-                            "BRRSession:NextWindow"
+                            "BRRSettings:NextWindow"
                         ]
                     },
                     "keyboardFocus": false,
@@ -138,7 +136,7 @@
                     "eventHandler":{
                         "type":"code",
                         "code":[
-                            "BRRSession:NextWindowHealing"
+                            "BRRSettings:NextWindowHealing"
                         ]
                     },
                     "keyboardFocus": false,
@@ -271,6 +269,21 @@
                     "modifiers":[
                         "shift"
                     ]
+                },
+                "hookk":{
+                    "control":{
+                        "controlName": "K",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"code",
+                        "code":[
+                            "BRRSettings:NextWindowHealing"
+                        ]
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
                 }
             }
         },
