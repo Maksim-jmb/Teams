@@ -34,4 +34,5 @@ selective healing in RR - better example then above https://youtu.be/7XA8OvVRe1g
 
 current update:
 * included FTL agent
-* testing new relay targting rotation in BRRSession focusing healer every other swap instead of once per rotation when healing tank or healer 
+* updated BRR to best solution so far for swapping to heal every other
+* good info today i learned from Lax - not always the code - some ingame settings help out using mouse buttons for RR
