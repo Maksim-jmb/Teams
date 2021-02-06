@@ -35,5 +35,6 @@ selective healing in RR - better example then above https://youtu.be/7XA8OvVRe1g
 current update:
 * included FTL agent
 * updated BRR to the best solution i have so far for swapping to heal every other
+* should probably make a reference to designate slot to healer - hard coded for slot 2 atm for the 2 groups i play currently
 * good info today i learned from Lax - not always the code - some ingame settings help out using mouse buttons for RR
 * might be able to clear up that mouse right click issue from above now with mouselook
