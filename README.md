@@ -34,5 +34,5 @@ selective healing in RR - better example then above https://youtu.be/7XA8OvVRe1g
 
 current update:
 * included FTL agent
-* updated BRR to best solution so far for swapping to heal every other
+* updated BRR to the best solution i have so far for swapping to heal every other
 * good info today i learned from Lax - not always the code - some ingame settings help out using mouse buttons for RR
