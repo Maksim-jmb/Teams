@@ -1,7 +1,5 @@
 objectdef ftlSettings
 {
-    ; variable uint FtlSlot
-
     method Initialize()
     {
     }
@@ -34,13 +32,13 @@ objectdef ftlSettings
     {
         if ${toSlot.Equal[${FtlSlot}]}
         {
-            echo "FTLfocus return toSlot ${toSlot} ${FtlSlot}"
+            ; echo "FTLfocus return toSlot ${toSlot} ${FtlSlot}"
             return
         }
         else
         {
             uplink focus jmb${FtlSlot}
-            echo "FTLfocus toSlot ${toSlot} ${FtlSlot}"
+            ; echo "FTLfocus toSlot ${toSlot} ${FtlSlot}"
         }
     }
 
@@ -50,7 +48,7 @@ objectdef ftlSettings
         {
             relay jmb${JMB.MouseOverSlot} BWLSession:ApplyWindowLayout
             relay party BRRSession:Disable
-            echo "FTLswaplayout return toSlot ${toSlot} ${FtlSlot}"
+            ; echo "FTLswaplayout return toSlot ${toSlot} ${FtlSlot}"
             return
         }
         else

@@ -99,7 +99,7 @@ objectdef vfxsession
                 This:ClearVfxViews
                 break
         }
-        if ${ULSfix}!=${RefreshedSlots}
+        if ${ULSfix2}!=${RefreshedSlots}
             This:RefreshSlots${setlayout}
     }
 

@@ -10,7 +10,7 @@
             "children":[
                 {
                     "type":"panel",
-                    "xFactor":0.4,
+                    "xFactor":0.8,
                     "yFactor":0.10,
                     "padding":20,
                     "borderThickness":3,

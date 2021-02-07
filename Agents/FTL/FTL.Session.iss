@@ -7,8 +7,6 @@ objectdef ftlSession
     method Initialize()
     {
         LGUI2:LoadPackageFile[xFTL.Session.lgui2Package.json]
-        ; FocusClick eat
-        focusclick click
     }
 
     method Shutdown()

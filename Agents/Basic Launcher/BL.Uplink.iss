@@ -126,7 +126,7 @@ objectdef blUplink
         variable uint Slot
         variable uint NumAdded
 
-        for (NumAdded:Set[1] ; ${NumAdded}<=${ULSfix2} ; NumAdded:Inc)
+        for (NumAdded:Set[1] ; ${NumAdded}<=${ULSfix3} ; NumAdded:Inc)
         {
             Slot:Set["${JMB.AddSlot.ID}"]
             This:InstallCharacter[${Slot}]
