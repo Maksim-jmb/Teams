@@ -5,7 +5,7 @@
             "type":"panel",
             "name":"basicRoundRobin.allButtons",
             "visibility":"visible",
-            "width":4480,
+            "horizontalAlignment":"stretch",
             "verticalAlignment":"stretch",
             "children":[
                 {
@@ -29,9 +29,13 @@
                                 "bold":true,
                                 "face":"Tahoma",
                                 "heightFactor":3
-                            }
+                            },
+                            "acceptsKeyboardFocus":false,
+                            "acceptsMouseFocus":false
                         }
-                    ]
+                    ],
+                    "acceptsKeyboardFocus":false,
+                    "acceptsMouseFocus":false
                 }
             ],
             "acceptsKeyboardFocus":false,
@@ -80,7 +84,7 @@
                     "eventHandler":{
                         "type":"code",
                         "code":[
-                            "BRRSettings:NextWindow"
+                            "BRRSession:NextWindow"
                         ]
                     },
                     "keyboardFocus": false,
@@ -269,21 +273,6 @@
                     "modifiers":[
                         "shift"
                     ]
-                },
-                "hookk":{
-                    "control":{
-                        "controlName": "K",
-                        "minValue": 1,
-                        "maxValue": 1
-                    },
-                    "eventHandler":{
-                        "type":"code",
-                        "code":[
-                            "BRRSettings:NextWindowHealing"
-                        ]
-                    },
-                    "keyboardFocus": false,
-                    "mouseFocus": false
                 }
             }
         },

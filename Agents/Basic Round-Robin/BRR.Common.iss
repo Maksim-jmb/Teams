@@ -262,9 +262,9 @@ atom NextWindowHealing1(int Count=1)
 
 atom NextWindowHealing2()
 {
-    uplink focus jmb${brrnum}
+    uplink focus (jmb1,jmb3,jmb4,jmb5)#${brrnum}
     mod:Set[1]
-    if ${brrnum}>=5
+    if ${brrnum}>=4
     {
         brrnum:Set[0]
     }
