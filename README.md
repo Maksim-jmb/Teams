@@ -1,12 +1,9 @@
 # Teams
-updated to work on Dev 1.03 build 6778
+updated to work on Dev 1.03 build 6781
 
-changed some references from agent2/5man to get it to work on Dev 1.03 - might work on 1.02, haven't tested it tho
+looks like some cool things coming - mess around with them this week...MasterSlot, TeamSlots, new Master event
 
-waiting to see what teams api will do - only thing i see atm with :AddTeam[json] is id,display_name,virtual files - tried to add a team name to no avail....    
-can't find much on schema, only see a reference in the agent schema to teams...so not sure how it works yet     
-
-did mess around and put in teams with slots,layout,relaygroup changes     
+teams menu with slots,layout,relaygroup changes     
 * using team1,2 -rest just examples i'll put up a vid to show it    
     
 revamped RR to work with mouse/modifiers in combination with addon clique....     
